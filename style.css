@@ -4,19 +4,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-        .product-details {
-            flex: 1;
-            padding: 10px;
-        }
+.product-details {
+    flex: 1;
+    padding: 10px;
+}
 
-        .product-details h1 {
-            color: brown;
-        }
+.product-details h1 {
+    color: brown;
+}
 
-        .product-details h2 {
-            color: #222;
-        }
+.product-details h2 {
+    color: #222;
+}
 
-        .old-price {
-            color: cadetblue;
-        }
+.old-price {
+    color: cadetblue;
+}
