@@ -20,3 +20,9 @@ body {
 .old-price {
     color: cadetblue;
 }
+
+button{
+    background-color: blue;
+    color: white;
+    height: 40px;
+}
