@@ -18,6 +18,33 @@
         href="https://shoes-shop-india.netlify.app/">
 
     <style>
+        .search-box{
+            display: flex;
+            /* flex: 1; */
+            max-width: 600px;
+            min-width: 200px;
+            height: 42px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        
+        input{
+            width: 100%;
+            padding: 10px 14px;
+            border: none;
+            outline: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 15px;
+        }
+        button{
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #f6bd69;
+            padding: 0 18px;
+            cursor: pointer;
+            font-size: 20px;
+        }
 
         #header {
             background-color: dimgrey;
@@ -73,6 +100,10 @@
              margin: 0;">
 
     <div id="header">
+        <form class="search-box" id="searchform">
+            <input type="search" id="Shoes" placeholder="search shoes by name..." aria-label="search shoes">
+            <button type="button" aria-label="search">🔍</button>
+        </form>
 
         <a style="margin: 10px; text-decoration: none;"
             href="./index.html">HOME</a>
