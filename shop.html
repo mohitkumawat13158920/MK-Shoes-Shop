@@ -26,6 +26,23 @@
             background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
             font-family: Arial, sans-serif;
         }
+        #header{
+            display: flex;
+            /* width: 100%; */
+            background-color: dimgrey;
+            font-size: x-large;
+            padding: 15px;
+            border-radius: 0px 0px 9px 9px;
+            border-bottom: 5px solid white;
+            align-items: center;
+        }
+        #logo{
+            width: 10%;
+        }
+        #logo img{
+            border-radius: 50%;
+            width: 100%;
+        }
             
         .search-box{
             display: flex;
@@ -58,14 +75,22 @@
         }
 
         #home {
-            background-color: dimgrey;
+            /* background-color: dimgrey;
             font-size: x-large;
             padding: 15px;
             border-radius: 0px 0px 9px 9px;
-            border-bottom: 5px solid white;
+            border-bottom: 5px solid white; */
+            margin: auto;
+            width: 50%;
+        }
+        #menu-part{
+            display: flex;
+            justify-content: center;
         }
 
         #home a {
+            width: 10%;
+            padding: 5px 14px;
             color: wheat;
             font-weight: 700;
         }
@@ -159,24 +184,29 @@
              min-height: 100vh;
              margin: 0;">
 
-    <div id="home">
-        <form class="search-box" id="searchform">
-            <input type="search" id="Shoes" placeholder="search shoes by name..." aria-label="search shoes">
-            <button type="button" aria-label="search">🔍</button>
-        </form>
-
-        <a style="margin: 10px; text-decoration: none;"
-            href="#home">HOME</a>
-
-        <a style="margin: 10px; text-decoration: none;"
-            href="#shop">SHOP</a>
-
-        <a style="margin: 10px; text-decoration: none;"
-            href="#about">ABOUT</a>
-
-        <a style="margin: 10px; text-decoration: none;"
-            href="#Contact">CONTACT</a>
-
+    <div id="header">
+        <div id="logo">
+            <img src="image.png" alt="">
+        </div>
+        <div id="home">
+            <form class="search-box" id="searchform">
+                <input type="search" id="Shoes" placeholder="search shoes by name..." aria-label="search shoes">
+                <button type="button" aria-label="search">🔍</button>
+            </form>
+            <div id="menu-part">
+                <a style="margin: 10px; text-decoration: none;"
+                href="#home">HOME</a>
+                
+                <a style="margin: 10px; text-decoration: none;"
+                href="#shop">SHOP</a>
+                
+                <a style="margin: 10px; text-decoration: none;"
+                href="#about">ABOUT</a>
+                
+                <a style="margin: 10px; text-decoration: none;"
+                href="#Contact">CONTACT</a>
+            </div>
+        </div>
     </div>
     
     <div id="shop">
