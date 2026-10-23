@@ -18,6 +18,15 @@
         href="https://shoes-shop-india.netlify.app/">
 
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: Arial, sans-serif;
+        }
+            
         .search-box{
             display: flex;
             /* flex: 1; */
@@ -46,7 +55,7 @@
             font-size: 20px;
         }
 
-        #header {
+        #home {
             background-color: dimgrey;
             font-size: x-large;
             padding: 15px;
@@ -54,7 +63,7 @@
             border-bottom: 5px solid white;
         }
 
-        #header a {
+        #home a {
             color: wheat;
             font-weight: 700;
         }
@@ -90,6 +99,15 @@
             border-bottom: 5px solid white;
             box-shadow:3px 3px 25px 3px  white;
         }
+        #about{
+            background-color: #ffffff24;
+            border: 1px solid wheat;
+            padding: 96px 0px;
+        }
+        #Contact{
+            padding: 96px 32px;
+            text-align: start;
+        }
 
     </style>
 
@@ -100,27 +118,28 @@
              min-height: 100vh;
              margin: 0;">
 
-    <div id="header">
+    <div id="home">
         <form class="search-box" id="searchform">
             <input type="search" id="Shoes" placeholder="search shoes by name..." aria-label="search shoes">
             <button type="button" aria-label="search">🔍</button>
         </form>
 
         <a style="margin: 10px; text-decoration: none;"
-            href="./index.html">HOME</a>
+            href="#home">HOME</a>
 
         <a style="margin: 10px; text-decoration: none;"
-            href="./shop.html">SHOP</a>
+            href="#shop">SHOP</a>
 
         <a style="margin: 10px; text-decoration: none;"
-            href="./about.html">ABOUT</a>
+            href="#about">ABOUT</a>
 
         <a style="margin: 10px; text-decoration: none;"
-            href="./Contactus.html">CONTACT</a>
+            href="#Contact">CONTACT</a>
 
     </div>
-
-    <h1 style="color: brown;">MK Shoes Shop India</h1>
+    
+    <div id="shop">
+        <h1 style="color: brown;">MK Shoes Shop India</h1>
 
     <h3>Welcome to my shoe shop</h3>
 
@@ -208,20 +227,90 @@
                 
             </div>
         </div>
+</div>
 
-    <div class="footer">
-
-        <h2>
-            Address: Rojda, Jaipur 302012
-        </h2>
-
-        <pre>
-EMAIL: mohitkumawat1311
-CONTACT: 9079020613
-        </pre>
-
+    <div id="about">
+        <h1 style="color: brown;">MK Shoes Shop 👟</h1>
+        
+        <h3>
+            Welcome to <strong>MK Shoes Shop</strong>, your trusted destination
+            for stylish, comfortable, and affordable footwear.
+        </h3>
+        
+        <p>
+            <strong>At MK Shoes Shop</strong>, we believe that the right pair of
+            shoes is more than just footwear — it is a part of your style and
+            personality.
+        </p>
+        
+        <p>
+            We offer a variety of shoes designed for everyday use, casual outings,
+            and different fashion preferences.
+        </p>
+        
+        <h2 style="color: brown;">Why Choose MK Shoes Shop?</h2>
+        
+        <div style="display: inline-block; text-align: left;">
+            <ul>
+                <li>Stylish and trendy footwear</li>
+                <li>Affordable prices</li>
+                <li>Focus on quality and comfort</li>
+                <li>Easy-to-browse shoe collection</li>
+                <li>Friendly customer support</li>
+            </ul>
+        </div>
+        
+        <p>
+            Our goal is to provide customers with a simple and enjoyable shopping
+            experience while offering shoes that combine
+            <strong>style, comfort, and value</strong>.
+        </p>
     </div>
 
-</body>
+    <div id="Contact">
+        <h1 style="color: red;">Visit Us</h1>
 
+    <ul class="contact-list">
+
+        <!-- Address -->
+        <li>
+            Address:
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Rojda%2C+Jaipur%2C+Rajasthan+302012"
+                target="_blank">
+                Rojda, Jaipur, Rajasthan – 302012
+            </a>
+        </li>
+
+        <!-- Email -->
+        <li>
+            Email:
+            <a href="mailto:mohitkumawat1311@gmail.com">
+                mohitkumawat1311@gmail.com
+            </a>
+        </li>
+
+        <!-- Instagram -->
+        <li>
+            Instagram:
+            <a
+                href="https://www.instagram.com/mohitkumawat1311/"
+                target="_blank">
+                @mohitkumawat1311
+            </a>
+        </li>
+
+        <!-- Contact -->
+        <li>
+            Contact:
+            <a href="tel:+919079020613">
+                9079020613
+            </a>
+        </li>
+
+    </ul>
+
+    <h2>Thank you for choosing MK Shoes Shop! ❤️</h2>
+    </div>
+</body>
 </html>
