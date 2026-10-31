@@ -17,6 +17,11 @@
     <link rel="canonical"
         href="https://shoes-shop-india.netlify.app/">
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
     <style>
         *{
             margin: 0;
@@ -29,6 +34,26 @@
             text-align: center;
             background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
         }
+        .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 1265px;
+        height: 265px;
+        object-fit: cover;
+      }
 
         #header{
             display: flex;
@@ -221,6 +246,41 @@
             </div>
         </div>
     </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUT1oSWYvCK9g3yZDuh5O6VfCjlRfH-Er6ud22K6VOQ&s=10" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1UkwADJIeiKPVqhgFDTYuxNA7HORPyce711bt5JAtw&s=10" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMIt1mJEJPFltEehRco8-Q1bw_CEjgDt9AHkoHV49EQ&s=10" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwku1xJdjhhkqFhqSUeMaKMhnvVWopLHV2uTi7SwjFYQ&s=10" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoRnCA1bhELBdYw8fZf0w2ySArg_WLHL6tUAoF2Oj8cw&s=10" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+     <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop : true ,
+        autoplay : true ,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
     
     <div id="shop">
         <h1 style="color: brown;">MK Shoes Shop India</h1>
