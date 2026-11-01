@@ -292,13 +292,18 @@
 
      <script>
       var swiper = new Swiper('.mySwiper', {
-        loop : true ,
+        effect: 'cube',
         autoplay : true ,
+        loop : true ,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-    });
+      });
     </script>
     
     <div id="shop">
