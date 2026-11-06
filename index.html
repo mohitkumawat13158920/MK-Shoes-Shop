@@ -51,7 +51,7 @@
         
         .swiper {
             width: 100%;
-            height: 100%;
+            height: auto;
         }
 
         .swiper-slide {
@@ -64,32 +64,37 @@
         }
 
         .swiper-slide img {
-            width: 1265px;
-            height: 265px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1265 / 265;
             object-fit: fill;
             display: block;
         }
 
         #header{
             display: flex;
-            /* width: 100%; */
+            width: 100%;
             background-color: #a52a2a9e;
             font-size: x-large;
-            padding: 15px;
+            padding: 15px 25px;
             border-radius: 0px 0px 9px 9px;
             border-bottom: 5px solid white;
             align-items: center;
+            justify-content: space-between;
             position: sticky;
-            /* top: 0px; */
-            right: 0px;
-            left: 0px;
+            top: 0px;
+            z-index: 100;
+            /* right: 0px; */
+            /* left: 0px; */
         }
         #logo{
-            width: 20%;
+            width: 22%;
+            margin: 0;
         }
         #logo img{
             /* border-radius: 50%; */
             width: 100%;
+            max-width: 250px;
         }
             
         .search-box{
@@ -120,22 +125,31 @@
         }
 
         #home {
-            margin: auto;
-            width: 50%;
+            margin: 0;
+            width: 75%;
         }
         #menu-part{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* gap: 10px; */
+            margin: 0;
         }
 
         #home a {
             width: 20%;
-            padding: 5px 0px;
+            padding: 8px 12px;
             color: wheat;
             font-weight: 700;
         }
+        #home a:hover {
+            color: white;
+            background-color: brown;
+            border-radius: 5px;
+        }
         #shop{
-            padding: 30px 0px 96px 0px;
+            padding: 30px 15px 96px 0px;
         }
         #shop h1,h3,.main-box{
             margin-bottom: 20px;
@@ -300,9 +314,9 @@
 
 <body>
 
-    <a href="#header">
+    <!-- <a href="#header">
         <i class="far fa-arrow-alt-circle-up" style="color: rgb(255, 0, 0);"></i>
-    </a>
+    </a> -->
 
     <div id="header">
         <div id="logo">
