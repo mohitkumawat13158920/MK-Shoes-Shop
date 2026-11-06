@@ -76,11 +76,11 @@
             width: 100%;
             background-color: #a52a2a9e;
             font-size: x-large;
-            padding: 15px 25px;
+            padding: 15px 0px;
             border-radius: 0px 0px 9px 9px;
             border-bottom: 5px solid white;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             position: sticky;
             top: 0px;
             z-index: 100;
@@ -128,20 +128,22 @@
             margin: 0;
             width: 75%;
         }
-        #menu-part{
+        #home #menu-part{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            list-style: none;
             /* gap: 10px; */
             margin: 0;
         }
-
-        #home a {
-            width: 20%;
+        #home #menu-part li{
+            width: 22%;
             padding: 8px 12px;
+        }
+        #home #menu-part li a {
             color: wheat;
-            font-weight: 700;
+            /* font-weight: 700; */
         }
         #home a:hover {
             color: white;
@@ -149,7 +151,7 @@
             border-radius: 5px;
         }
         #shop{
-            padding: 30px 15px 96px 0px;
+            padding: 30px 15px;
         }
         #shop h1,h3,.main-box{
             margin-bottom: 20px;
@@ -157,7 +159,7 @@
         .main-box{
             display: flex;
             flex-wrap: wrap;
-            justify-content: start;
+            justify-content: center;
             width: 100%;
         }
         .box{
@@ -220,6 +222,7 @@
             padding: 96px 32px;
             text-align: start;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
         }
         .contact-box{
@@ -267,7 +270,12 @@
             }
             .contact-box{
                 width: 85%;
+                text-align: center;
             }
+            #home #menu-part li{
+            width: 30%;
+            padding: 8px 12px;
+        }
         }
         
         @media (min-width: 577px) and (max-width :776px){
@@ -278,7 +286,33 @@
                 /* padding: 5px; */
             }
             #about .about-ul li{
+                margin: 5px;
                 width: 36%;
+                border: none;
+                border-radius: 10px;
+                padding: 5px 14px;
+                background-color: #a52a2a7d;
+                color: white;
+            }
+            .contact-box{
+                width: 85%;
+                text-align: center;
+            }
+            #home #menu-part li{
+                padding: 8px 12px;
+                width: 22%;
+            }
+        }
+        
+        @media (min-width: 777px) and (max-width :976px){
+            .box{
+                width: 30%;
+                margin: 10px 10px 20px 10px;
+                /* padding: 5px; */
+                border: solid whitesmoke;
+            }
+            #about .about-ul li{
+                width: 23%;
                 margin: 5px;
                 border: none;
                 border-radius: 10px;
@@ -286,26 +320,13 @@
                 background-color: #a52a2a7d;
                 color: white;
             }
-        }
-        
-        @media (min-width: 777px) and (max-width :976px){
-            .box{
-                border: solid whitesmoke;
-                width: 30%;
-                margin: 10px 10px 20px 10px;
-                /* padding: 5px; */
+            .contact-box{
+                width: 85%;
+                /* align-items: center; */
+                text-align: center;
             }
-            #about .about-ul li{
-            width: 23%;
-            margin: 5px;
-            border: none;
-            border-radius: 10px;
-            padding: 5px 14px;
-            background-color: #a52a2a7d;
-            color: white;
         }
-        }
-
+            
         
 
     </style>
@@ -327,19 +348,27 @@
                 <input type="search" id="Shoes" placeholder="search shoes by name..." aria-label="search shoes">
                 <button type="button" aria-label="search">🔍</button>
             </form>
-            <div id="menu-part">
-                <a style="margin: 10px; text-decoration: none;"
-                href="#home">HOME</a>
+            <ul id="menu-part">
+                <li>
+                    <a style="margin: 10px; text-decoration: none;"
+                    href="#home">HOME</a>
+                </li>
                 
-                <a style="margin: 10px; text-decoration: none;"
-                href="#shop">SHOP</a>
+                <li>  
+                    <a style="margin: 10px; text-decoration: none;"
+                    href="#shop">SHOP</a>
+                </li>
                 
-                <a style="margin: 10px; text-decoration: none;"
-                href="#about">ABOUT</a>
+                <li>
+                    <a style="margin: 10px; text-decoration: none;"
+                    href="#about">ABOUT</a>
+                </li>
                 
-                <a style="margin: 10px; text-decoration: none;"
-                href="#Contact">CONTACT</a>
-            </div>
+                <li>
+                    <a style="margin: 10px; text-decoration: none;"
+                    href="#Contact">CONTACT</a>
+                </li>
+            </ul>
         </div>
     </div>
 
