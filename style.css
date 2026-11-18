@@ -37,14 +37,3 @@ button{
     border-bottom: 5px solid white;
     box-shadow:3px 3px 25px 3px  white;
 }
-@media (min-width: 100px)and(max-width: 576px){
-    .product-page {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .product-images {
-        width: 100%;
-        text-align: center;
-    }
-}
