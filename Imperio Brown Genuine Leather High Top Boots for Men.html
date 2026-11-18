@@ -21,6 +21,7 @@
     <style>
         .product-page {
             display: flex;
+            flex-wrap: wrap;
             gap: 30px;
             padding: 20px;
         }
@@ -36,6 +37,17 @@
             width: 290px;
             object-fit: cover;
             margin: 5px;
+        }
+        @media (min-width: 100px)and(max-width: 576px){
+            .product-page {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .product-images {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
