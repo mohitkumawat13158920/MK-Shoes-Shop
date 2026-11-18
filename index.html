@@ -118,7 +118,12 @@
         #home #menu-part li{
             width: 19%;
             padding: 8px 12px;
-            margin: 0px;
+            /* margin: 0px; */
+            background-color: brown;
+            border-bottom: 3px solid white ;
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin: 0px 10px;
         }
         #home #menu-part li a {
             color: wheat;
@@ -253,6 +258,92 @@
         }
         
         @media (min-width: 100px) and (max-width :576px){
+            #header{
+                display: flex;
+                flex-wrap: wrap;
+                /* width: 100%; */
+                background-color: #8f2929ed;
+                /* font-size: x-large; */
+                padding: 10px 3%;
+                border-radius: 0px 0px 9px 9px;
+                border-bottom: 3px solid white;
+                align-items: center;
+                text-align: center;
+                justify-content: space-between;
+                position: sticky;
+                top: 0px;
+                z-index: 100;
+                gap: 20px;
+                /* right: 0px; */
+                /* left: 0px; */
+            }
+            #logo{
+                width: 30%;
+                margin: auto;
+            }
+            #logo img{
+                width: 100%;
+                max-width: 250px;
+                /* border-radius: 50%; */
+            }
+            .search-box{
+                display: flex;
+                height: auto;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            
+            input{
+                width: 100%;
+                padding: 10px 14px;
+                border: none;
+                border-bottom: 4px solid brown;
+                outline: none;
+                border-radius: 5px 0 0 5px;
+                font-size: 15px;
+            }
+            button{
+                border: none;
+                border-radius: 0 5px 5px 0;
+                background-color: #f6bd69;
+                padding: 0 18px;
+                cursor: pointer;
+                font-size: 20px;
+                border-bottom: 4px solid brown;
+            }
+            
+            #home {
+                margin: auto;
+                width: 75%;
+            }
+            #home #menu-part{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                /* gap: 10px; */
+                margin: 0;
+            }
+            #home #menu-part li{
+                width: 45%;
+                margin: 5px;
+            }
+            #home #menu-part li:hover{
+                background-color: #ffffff4a;
+                color: white;
+                /* border-radius: 5px; */
+            }
+            #home #menu-part li a {
+                color: wheat;
+                /* font-weight: 700; */
+            }
+            #home a:hover {
+                color: white;
+                background-color: brown;
+                border-radius: 5px;
+                
+            }
             .box{
                 border: solid whitesmoke;
                 width: 90%;
@@ -276,11 +367,11 @@
                 border-radius: 10%;
                 width: 100%;
             }
-            #home #menu-part li{
+            /* #home #menu-part li{
             width: 30%;
             padding: 8px 12px;
             margin: 0px;
-        }
+        } */
         }
         
         @media (min-width: 577px) and (max-width :776px){
@@ -305,8 +396,8 @@
             }
             #home #menu-part li{
                 padding: 8px 12px;
-                width: 19%;
-                margin: 0px;
+                width: 30%;
+                margin: 5px;
             }
         }
         
