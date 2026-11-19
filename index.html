@@ -118,7 +118,6 @@
         #home #menu-part li{
             width: 19%;
             padding: 8px 12px;
-            /* margin: 0px; */
             background-color: brown;
             border-bottom: 3px solid white ;
             border-radius: 10px;
@@ -128,12 +127,27 @@
         #home #menu-part li a {
             color: wheat;
             /* font-weight: 700; */
+            position: relative;
         }
-        #home a:hover {
+        #home #menu-part li a::after{
+            content: "";
+            background: white;
+            height: 2px;
+            width: 0px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            transition: 1s all;
+        }
+        #home #menu-part li a:hover::after{
+            width: 100%;
+            transition: 1s all;
+        }
+        /* #home a:hover {
             color: white;
             background-color: brown;
             border-radius: 5px;
-        }
+        } */
         .swiper {
             width: 100%;
             height: auto;
