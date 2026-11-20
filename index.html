@@ -175,6 +175,39 @@
         #shop h1,#shop h3,#shop .main-box{
             margin-bottom: 20px;
         }
+        #shop h1{
+            position: relative;
+        }
+        #shop h1::after{
+            content: "";
+            background: red;
+            position: absolute;
+            bottom: -5px;
+            right: 37%;
+            width: 0px;
+            height: 3px;
+            transition: 1s all;
+        }
+        #shop h1::before{
+            content: "";
+            background: beige;
+            position: absolute;
+            bottom: -5px;
+            left: 37%;
+            width: 0px;
+            height: 3px;
+            transition: 1s all;
+        }
+        #shop h1:hover::after{
+            width: 13.001%;
+            /* height: 3px; */
+            transition: 1s all;
+        }
+        #shop h1:hover::before{
+            width: 13.001%;
+            /* height: 3px; */
+            transition: 1s all;
+        }
         .main-box{
             display: flex;
             flex-wrap: wrap;
