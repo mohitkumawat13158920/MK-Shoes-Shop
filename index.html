@@ -68,6 +68,7 @@
         }
         #logo{
             width: 22%;
+            animation: logo 3s;
         }
         #logo img{
             /* border-radius: 50%; */
@@ -177,6 +178,7 @@
         }
         #shop h1{
             position: relative;
+            animation: text infinite 3s;
         }
         #shop h1::after{
             content: "";
@@ -432,6 +434,8 @@
             cursor: pointer;
             border-bottom: 5px solid white;
             box-shadow:3px 3px 25px 3px  white;
+            animation: buynow infinite 5s;
+            transition: 3s all;
         }
         .box button:hover{
             background-color: white;
@@ -479,6 +483,7 @@
         }
         .contact-box img{
             border-radius: 10%;
+            animation: img 3s;
         }
         .contact-list {
             display: block;
@@ -498,6 +503,36 @@
 
         .contact-list a:hover {
             text-decoration: underline;
+        }
+        @keyframes logo{
+            0%{
+                transform: rotate3d(1,1,1,360deg);
+            }
+        }
+        @keyframes text{
+            0%{
+                color: brown;
+            }100%{
+                color: aqua;
+            }
+        }
+        @keyframes buynow{
+            0%{
+                background-color: red;
+                color: white;
+            }100%{
+                border-bottom: 5px solid red;
+                background-color: white;
+                color: red;
+            }
+        }
+        @keyframes img{
+            0%{
+                transform: translateX(+110%);
+            }100%{
+                transform: translateX(+110%);
+
+            }
         }
         
         @media (min-width: 100px) and (max-width :576px){
