@@ -89,6 +89,18 @@
             cursor: pointer;
             border-bottom: 5px solid white;
             box-shadow:3px 3px 25px 3px  white;
+            animation: buynow infinite 5s;
+            transition: 3s all;
+        }
+        @keyframes buynow{
+            0%{
+                background-color: red;
+                color: white;
+            }100%{
+                border-bottom: 5px solid red;
+                background-color: white;
+                color: red;
+            }
         }
         
         @media(min-width: 100px) and (max-width: 576px){
