@@ -459,6 +459,40 @@
         #about h1,#about h2,#about h3,#about p,#about div{
             margin-bottom: 20px;
         }
+        #about h1{
+            position: relative;
+            animation: text infinite 3s;
+        }
+        #about h1::after{
+            content: "";
+            background: red;
+            position: absolute;
+            bottom: -5px;
+            right: 37%;
+            width: 0px;
+            height: 3px;
+            transition: 1s all;
+        }
+        #about h1::before{
+            content: "";
+            background: white;
+            position: absolute;
+            bottom: -5px;
+            left: 37%;
+            width: 0px;
+            height: 3px;
+            transition: 1s all;
+        }
+        #about h1:hover::after{
+            width: 13.001%;
+            /* height: 3px; */
+            transition: 1s all;
+        }
+        #about h1:hover::before{
+            width: 13.001%;
+            /* height: 3px; */
+            transition: 1s all;
+        }
         #about .about-ul li{
             width: 23%;
             margin: 5px;
